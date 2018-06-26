@@ -3,27 +3,28 @@
 <body>
 <h1>Device ID Checker</h1>
 
-<form>
+<input id="ID" type="text">
 
-<input Id="ID">
+<button onclick="IDCheck()">Submit</button>
 
-<input type="submit" value="Submit" onclick="IDCheck()">
-
-</form>
 
 </body>
 
 <script>
 function IDCheck() {
-		 var x, text;
-		x = document.getElementById("ID").value;
-    if (x.length < 34) {
-        text = "ID is not Valid";
-        return false
-	}else {
-		return true
-		text = "ID is Valid";
+
+		console.log('IDCheck');
+		 var txt = (document.getElementById("ID");
+		 var textLength = txt.value.length;
+	if(textLength < 34)
+        txt = "ID is not Valid";
 	}
+	//else 
+	//{
+		//txt = "ID is Valid";
+		console.log('IDCheck2');
+	//}
+	
 }
 </script>
 
