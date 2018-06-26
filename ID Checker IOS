@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Device ID Checker</h1>
+
+<form>
+
+<input Id="ID">
+
+<input type="submit" value="Submit" onclick="IDCheck()">
+
+</form>
+
+</body>
+
+<script>
+function IDCheck() {
+		 var x, text;
+		x = document.getElementById("ID").value;
+    if (x.length < 34) {
+        text = "ID is not Valid";
+        return false
+	}else {
+		return true
+		text = "ID is Valid";
+	}
+}
+</script>
+
+
+</html>
