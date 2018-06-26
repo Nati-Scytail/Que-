@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Formula Help</h2>
+
+<button onclick="myFunction1()">Memory Variable</button>
+
+<button onclick="myFunction2()">Constants</button>
+
+<button onclick="myFunction3()">Iif</button>
+
+<button onclick="myFunction4()">Dated Diff</button>
+
+<button onclick="myFunction5()">WDated Diff</button>
+
+<button onclick="myFunction6()">Average</button>
+
+<button onclick="myFunction7()">Sum</button>
+
+<button onclick="myFunction8()">Difference</button>
+
+<button onclick="myFunction9()">First</button>
+
+<button onclick="myFunction10()">IsNull</button>
+
+<button onclick="myFunction11()">Count</button>
+
+<button onclick="myFunction12()">Scorecount</button>
+
+<button onclick="myFunction13()">AtCalc</button>
+
+
+<script>
+function myFunction1() {
+    alert("MEMORY VARIABLE To improve performance, or make things easier you may want to calculate a formula once, and use the result multiple times[M1]=[A]+[B]/[C];[M1]")
+}
+
+function myFunction2() {
+    alert("CONSTANTS Use constants to calculate a formula in one measure and use the result in 1 or more others[C1]=([A]/[B])*100;[C1]")
+}
+
+function myFunction3() {
+    alert("IIF Use IIF to check if an expression is true or false, and return a value dependent on this result. Eg. IIF([A]>10, 10, [A]<0, 0, [A]")
+}
+
+function myFunction4() {
+    alert("DATEDIFF Work out a count of periods between 2 dates DATEDIFF('DAY', [A], [B]) DATEDIFF('MONTH', [A], [B])")
+}
+function myFunction5() {
+    alert("WDATEDIFF Work out the number of working days between 2 dates WDATEDIFF([A], [B])")
+}
+function myFunction6() {
+    alert("AVERAGE Work out the average of values, ignoring all NULL values AVG([A], [B], [C])")
+}
+function myFunction7() {
+    alert("SUM Work out the sum (add each value), ignoring all NULL values SUM([A], [B], [C])")
+}
+function myFunction8() {
+    alert("DIFFERENCE Work out the difference (minus each value), ignoring all NULL values DIFFERENCE([A], [B], [C])")
+}
+function myFunction9() {
+    alert("FIRST Get the value from the first non NULL/empty variable FIRST([A], [B], [C])")
+}
+function myFunction10() {
+    alert("ISNULL Check if a value is NULL/empty. NOTE: [A]=null will not work! ISNULL([A])")
+}
+function myFunction11() {
+    alert("COUNT Count how many times a value appears in an array of other values. The first parameter is the value you are checking for COUNT(1, [C1], [C2], [C3])")
+}
+function myFunction12() {
+    alert("SCORECOUNT Count how many scores have a result of a particular value. Each score in the scorecard/inspection will be checked to see if the value matches SCORECOUNT(1)")
+}
+function myFunction13() {
+    alert("ATCALC You can use an AtCalc to calculate most things using criteria ATCALC(X) - Where X is the id of the atCalc to run")
+}
+		
+</script>
+
+</body>
+</html>
